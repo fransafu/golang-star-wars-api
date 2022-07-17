@@ -11,4 +11,4 @@ Run dragonflydb
 * docker-compose up -d dragonflydb
 
 How to run the program
-* go run main.go
+* go run cmd/api/main.go
