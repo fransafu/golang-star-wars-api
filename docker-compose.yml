@@ -1,0 +1,14 @@
+version: '3.6'
+services:
+  dragonflydb:
+    image: docker.dragonflydb.io/dragonflydb/dragonfly
+    ulimits:
+      memlock: -1
+    hostname: dragonflydb
+    ports:
+      - "6379:6379"
+  redis:
+    image: "redis:alpine"
+    hostname: redis
+    ports:
+      - "6379:6379"
