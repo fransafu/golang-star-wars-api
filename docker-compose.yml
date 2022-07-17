@@ -1,5 +1,15 @@
 version: '3.6'
 services:
+  golang-dragonflydb-example:
+    hostname: golang-dragonflydb-example
+    # TODO: Build
+    ports:
+      - "8000:8000"
+      - "8080:8080"
+    depends_on:
+      - redis
+    #env_file:
+    #  - production.sample.env
   dragonflydb:
     image: docker.dragonflydb.io/dragonflydb/dragonfly
     ulimits:
